@@ -1,0 +1,468 @@
+body { font-family: 'Nunito', sans-serif; background-color:#FFFFFF; font-size: 14px; color: #58626e; }
+body.home { background-color:#e1e4e7; }
+ul { list-style-type: none; margin: 0 0 0 30px; padding: 0; }
+a { color: #f26f6c; text-decoration: none; }
+p { margin: 0; padding: 0 0 30px; }
+p, li { font-size: 15px; font-weight: 300; line-height: 22px; }
+p strong, li strong { font-weight: 600; }
+b, strong { font-weight: 600; }
+
+/* resetting Classes */
+.right-padding5 { padding-right:5px; }
+.left-padding5 { padding-left:5px; }
+.no-right-padding { padding-right:0; }
+.no-left-padding { padding-left:0; }
+.spacer-40 { padding: 20px 0; }
+.spacer-60 { padding: 30px 0; }
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+
+/* Header CSS starts here */
+.header { background-color: #3572b0; text-align: center; position: relative; box-sizing: border-box; 
+  display: table; width: 100%; }
+.header .only-logo { padding: 23px 0; }
+.logo { color: #fff; text-decoration: none; }
+.logo img {width: 150px;}
+.logo span { display: inline-block; vertical-align: middle; }
+.logo span:first-child { font-size: 30px; font-weight: 600; letter-spacing: -1px; }
+.logo span:last-child { font-size: 30px; font-weight: 300; letter-spacing: -1px; margin: 0 0 0 5px; }
+
+/* Main Navigation */
+.header + section { padding: 40px 0 0; }
+
+/* Setting NAV*/
+.header-left { float: left; padding: 0 0 0 40px; margin: 23px 0; }
+.header-right { float: right; }
+.settings-nav > ul { list-style: outside none none; margin: 0; padding: 0; bottom: -91px!important; display: none;
+  position: absolute; right: 0; background-color: #e1e4e7; opacity: 0; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.settings-nav > ul a { display: block; padding: 12px 20px; text-align: left; text-decoration: none;
+  width: 140px; color: #A1A7B0; }
+.settings-nav > ul a:hover { background-color: #c8cdd3; /*color: #54c4c9;*/ color: #FFF; }
+.settings-nav .icon { position: absolute; right: 0; top: 0; display: block; font-size: 28px;
+  /*background-color: #c2c7ce;*/ background-color: #e1e4e7; cursor: pointer; color: #A1A7B0; }
+
+nav.navcontainer { border: 0 none; border-radius: 0; margin: 0; }
+.navcontainer .container-fluid, .navcontainer .navbar-collapse { padding: 0; }
+.navcontainer .navbar-nav > li > a { padding: 37px 20px; outline: none; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover { background-color: #7ebbf9; color: #3572B0; }
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  background-color: #7ebbf9; color: #3572B0; }
+.navbar-default .navbar-nav > li > a { color: #FFF; background-color: #3572B0; position: relative; }
+.navbar-default .navbar-nav > li > a:before { content: ""; position: absolute; left: 0; height: 100%;
+  width: 1px; background-color: #72afea; top: 0; }
+.dropdown.custom-dropdown:hover ul { display: block; left: auto; right: 0; }
+.navbar-default .navbar-nav > .dropdown > a .caret { border-bottom-color: #fff; border-top-color: #fff; }
+
+/* Main Navigation Ends */
+/* Header CSS ends here */
+
+/* Content CSS starts here */
+.content { padding: 50px 0 0; }
+
+/* Fields CSS starts here */
+.controls { box-sizing: border-box; display: inline-block; margin: 0 0 15px; width: 49.5%; vertical-align: top; }
+.controls:nth-child(2n+1) { padding: 0 10px 0 0; }
+.controls:nth-child(2n){ padding: 0 0 0 10px; }
+.controls.full-width-control{ width: 100%; padding: 0; }
+.field-container .controls.last { margin: 0; }
+.controls label { color: #58626e; display: block; position: relative; font-weight: normal; margin: 0; }
+.controls label .info { color: #3c77ac; font-size: 16px; position: absolute; right: 0; top: 0; }
+.controls label.required:after { color: #54c4c9; content: "*"; font-size: 11px; font-weight: normal; 
+  vertical-align: top; }
+.controls input[type="email"], .controls input[type="password"], .controls input[type="text"],
+.controls input[type="date"], .controls textarea { border: 1px solid #e7ebef; color: #58626e;
+  display: block; height: 42px; margin: 3px 0; padding: 0 10px; width: 100%; box-sizing: border-box;
+  -moz-transition: all 0.25s ease-in-out 0s; 
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s; }
+.controls textarea { height: auto; resize: none; }
+.controls input[type="email"]:focus, .controls input[type="password"]:focus, .controls input[type="text"]:focus,
+.controls textarea:focus, .controls input[type="date"]:focus, .select:focus, .select select:focus {
+  background-color: #ecf7f9; outline: none; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #59afe1;
+  border-color: #59afe1; }
+/*.error { color: #e14447; font-size: 12px; display: block; }*/
+/*.error { background-color: #e14447; border-radius: 0 0 10px 10px; color: #fff; display: none;
+  font-size: 12px; padding: 10px; }
+.iserror { border-color: rgba(255, 0, 0, 0.5) !important; box-shadow: none; 
+  margin-bottom: 0 !important; }*/
+
+.btn.primary-btn { background-color: #3572b0; color: #fff; width: 100%; outline: none; 
+  transition: all 0.2s ease-in 0s; }
+.btn.primary-btn.pause { background-color: #cf2929; }
+.btn.primary-btn.activate { background-color: #2D77E4; }
+/* Fields CSS ends here */
+
+/* SignUp Form CSS starts here */
+.signup-form { background-color: #fff; margin: 0 auto 20px; border-radius: 5px; max-width: 650px;
+  padding: 0 50px 50px; box-sizing: border-box; }
+.form-header .title { color: #58626e; font-size: 30px; letter-spacing: -1px; padding: 40px 0 10px;
+  text-align: center; text-transform: uppercase; }
+.form-header .description { font-size: 17px; line-height: 20px; text-align: center; }
+.form-body { border-top: 1px solid #e7ebef; margin: 30px 0 0; padding: 20px 0 0; }
+.seperator { border-top:1px solid #e7ebef; margin: 30px 0 20px; }
+.acct-form .form-footer { margin: 0 0 50px; }
+.privacy-policy, .form-footer { font-size: 12px; font-weight: 300; text-align: center; }
+.privacy-policy > a, .form-footer > a { color: #54c4c9; font-weight: 500; text-decoration: none; }
+.privacy-policy + .seperator { margin-top:20px; }
+.social-network { font-size: 40px; text-align: center; }
+.social-network a, .social-network button { text-decoration: none; }
+.social-network button { border: 0 none; font-size: 40px; line-height: 20px; padding: 0; }
+.social-network .facebook { color: #3B579D; }
+.social-network .linkedin { color: #0274B3; }
+.social-network .google { color: #e93727; }
+.get-started { padding: 10px 0 40px; text-align: center; }
+.get-started > input[type="submit"] { background-color: #3572b0; border: 0 none; border-radius: 5px; color: #fff;
+  cursor: pointer; font-size: 13px; padding: 12px 45px; text-transform: uppercase;
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.get-started > input[type="submit"]:hover { background-color: #b2da6c; }
+/* SignUp Form CSS ends here */
+
+/* Login Form */
+.login-form, .way-to-app { background-color: #fff; border-radius: 5px; box-sizing: border-box; margin: 0 auto; 
+  max-width: 650px; padding: 30px; }
+/*.way-to-app { background-color: inherit; margin: 30px auto 0; padding: 30px 0; }
+.way-to-app .title { font-size: 26px; margin: 0 0 20px; }
+.way-to-app .description { font-size: 16px; font-weight: 300; margin: 0 0 20px; }
+.way-to-app .link { font-size: 16px; font-weight: 600; }
+.way-to-app .link > a { color: #3572b0; }
+.way-to-app .app-logo { text-align: right; }
+.way-to-app .app-logo img { max-width: 110px; width: 70%; }*/
+.login-form .form-body { margin: 0; border: 0; padding: 0; }
+.controls input[type="submit"] { background-color: #3572b0; border: 0 none; border-radius: 5px; color: #fff;
+  padding: 8px 10px; width: 40%; }
+.login-form p.forgot-password { float: right; font-size: 14px; margin: 11px 0 0; padding: 0;}
+p.forgot-password a { color: #7b8b8e; text-decoration: none; transition: all 300ms ease 0s; }
+
+/* Content CSS ends here */
+
+/* Footer CSS starts here */
+.copyright { background-color: #455967; color: #bcc5cc; font-size: 12px; font-weight: 300; padding: 25px 0;
+  text-align: center; }
+.copyright a { color: #bcc5cc; display: inline-block; margin: 0 6px; text-decoration: none; }
+#footer.fixed { bottom: 0; position: absolute; width: 100%; }
+/* Footer CSS ends here */
+
+/* Payment Page CSS starts here */
+
+
+/* Payment Form CSS Starts here */
+.payment-form-container { box-sizing: border-box; margin: 0 auto; max-width: 780px; padding: 40px 30px 0; }
+.form-header .payment-summary .title { color: #a1a7b0; font-size: 14px; letter-spacing: 0; margin: 15px 0 20px;
+  padding: 0; text-align: left; }
+.form-header .payment-summary .payment-details { width: 100%; }
+.form-header .payment-summary .payment-details td:first-child { font-weight: 300; padding: 0 0 5px; }
+.form-header .payment-summary .payment-details td:last-child { text-align: right; padding: 0 0 5px; }
+.form-header .payment-summary .payment-details .total-row td { border-top: 1px solid #a1a7b0; padding: 10px 0 0; }
+.form-header .left { margin-right: 10px; }
+.form-header .left, .form-header .right { display: inline-block; vertical-align: top; width: 49%; }
+.form-header .left p { font-size: 16px; font-weight: 300; margin: 0; padding: 0 0 30px; }
+.form-header .left .controls { box-sizing: border-box; width: 100%; padding: 0; }
+.controls label .field-desc { color: #aaa; font-size: 12px; }
+.left .controls input[type="text"] { width: 60%; }
+.controls .group-field input { display: inline-block; }
+.controls .group-field input[type="submit"] { background-color: #3572b0; border: 0 none; border-radius: 5px;
+  color: #fff; cursor: pointer; font-size: 13px; margin-left: 5%; padding: 11px 0; text-transform: uppercase;
+  width: 30%; 
+  transition: all 0.2s ease-in 0s; }
+.form-header .right { background-color: #e1e4e7; box-sizing: border-box; color: #a1a7b0; padding: 0 15px 15px; }
+.form-body.payment-section { border: medium none; margin: 0; padding: 0; }
+.billing-address-box, .payment-process-box { float: left; width: 49%; }
+.billing-address-box > h2, .payment-process-box > h2 { font-size: 20px; font-weight: normal; margin: 40px 0 30px; }
+.billing-address-box { margin-right: 2%; }
+.payment-section .controls { padding: 0; width: 100%; }
+
+.select { background-color: white; background-position: right 12px center; background-repeat: no-repeat;
+  background-size: 11.5px 8px; border: 1px solid #e7ebef; border-radius: 3px; cursor: pointer; 
+  overflow: hidden; width: 100%; box-sizing: border-box; position: relative; margin: 3px 0; height: 42px; }
+.fortawesome { position: absolute; right: 10px; top: 10px; color: #e1e4e7; }
+.select select { -moz-appearance: none;  -webkit-appearance: initial; box-sizing: border-box; 
+  background: transparent; border: 0; border-radius: 0; cursor: pointer; color: #58626e; font-size: 14px;
+  height: 40px; outline: none; box-shadow: none; padding-left: 10px; margin-top: 0; width: 100%; font-weight: 300; }
+.select select { border-right: 1px solid #e7ebef; }
+.group-field .control { float: left; width: 49%; }
+.group-field .control:first-child{ margin-right: 2%; }
+.group-field .control:nth-child(2) { position: relative; top: -3px; }
+.full-width-control .group-field .control:nth-child(2) { top: 0; }
+.with-date-control .control { width: 30%; }
+.with-date-control .control.date-control { width: 68%; }
+.with-date-control .control.date-control .select { float: left; width: 47%; }
+.with-date-control .control.date-control .select:nth-child(2) { margin-right: 3%; }
+.payment-process .next { padding: 0 0 70px; text-align: right; }
+.next button { background-color: #3572b0; border: 0 none; border-radius: 5px; color: #fff; cursor: pointer;
+  font-size: 13px; padding: 12px 75px; text-transform: uppercase; position: relative; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.next button:hover { background-color: #b2da6c; }
+.next button .fa { height: 100%; line-height: 42px; position: absolute; right: 10px; top: 0; }
+/* Payment Form CSS Ends here */
+
+/** Payment Page CSS with TYpeForm UI **/
+/* TYPEFORM */
+.controls.typefield div.field, .controls.typefield .submit.confirm { padding: 0; }
+.controls.typefield .field input { border: 1px solid transparent; }
+.controls.typefield .field input { border-bottom-color: #619edc; color: #3572b0; font-size: 18px; font-weight: 400;
+  padding: 5px 8px; margin: 0 0 30px; width: 100%;
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.controls.typefield .field input:focus { border: 1px dashed #619edc; outline: none; box-shadow:none; background-color: #FFF; }
+.controls.typefield .error { /*background-color: #ffd4d4;*/ border-radius: 6px; box-sizing: border-box; 
+  margin: 20px 0 30px; padding: 2px 10px; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.form-body .controls.typefield { margin: 0 0 50px; }
+.controls.typefield label { margin: 0 0 10px; line-height: 25px; }
+.controls.typefield label span { display: inline-block; vertical-align: top; line-height: 24px; }
+.controls.typefield label .count { font-size: 14px; margin: 1px 0 0; color: #619edc; }
+.controls.typefield label .label { color: #58626e; font-size: 20px; font-weight: 300; padding: 0; 
+  margin: 0; }
+.controls.typefield label .arrow { font-size: 12px; margin: 0; color: #619edc; display: none; }
+.controls.typefield label .arrow i { font-style: normal; font-weight: 100; }
+.controls.typefield label.required:after { color: #58626e; content: "*"; font-size: 22px; 
+  font-weight: normal; position: relative; right: 5px; top: -3px; vertical-align: sub; }
+.controls.typefield .group-field input[type="submit"] { background-color: #3572b0; border: 0 none; border-radius: 5px;
+  color: #fff; cursor: pointer; font-size: 13px; padding: 11px 0; text-transform: uppercase;
+  width: 30%;
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.controls.typefield .field input.input-validation-error { border: 1px dashed #ff0000; }
+.controls.typefield .error.field-validation-error { position: relative; }
+.controls.typefield .error.field-validation-error:before { content: '\f015'; }
+.controls.typefield .select-field .error.field-validation-error { margin: 60px 0 0; }
+.select-field .bootstrap-select.btn-group button.iserror { border: 1px dashed #ff0000; }
+
+/* TYPEFORM Select Field */
+.select-field .bootstrap-select.btn-group { max-width: none; width: 100% !important; margin: 0 0 30px; }
+.select-field .bootstrap-select.btn-group button, .select-field .bootstrap-select.btn-group button:hover,
+.select-field .bootstrap-select.btn-group button:focus { border: 1px solid transparent; outline: none; }
+.select-field .bootstrap-select.btn-group button { border-bottom-color: #619edc; color: #3572b0; font-size: 18px; font-weight: 400;
+  padding: 5px 8px; margin: 0; width: 100%;
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.btn-group.open .dropdown-toggle { box-shadow: none; }
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default { background-color: transparent; }
+.select-field .bootstrap-select.btn-group button:hover, 
+.select-field .bootstrap-select.btn-group button:focus { background-color: #FFF; box-shadow: none;
+  border-bottom-color: #619edc; outline: medium none !important; color: #3572b0; }
+.select-field .dropdown-menu.open { background: transparent; margin: 0; box-shadow: none; border: 0; }
+.select-field .dropdown-menu.open .bs-searchbox { padding: 0; }
+.select-field .dropdown-menu.open .bs-searchbox .form-control { border: 1px solid; margin: 0; }
+.select-field .dropdown-menu.open .dropdown-menu.inner { background-color: transparent; }
+.select-field .dropdown-menu > li > a { background-color: #FFF; border: 1px solid #CCC;
+  border-radius: 5px; color: #666; font-size: 16px; margin: 5px 0; padding: 5px 10px; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.select-field .dropdown-menu > .active > a, .select-field .dropdown-menu > .active > a:focus,
+.select-field .dropdown-menu > .active > a:hover { background-color: #ccc; border: 1px solid #666;
+  border-radius: 5px; color: #666; font-size: 16px; margin: 5px 0; padding: 5px 10px; }
+.select-field .dropdown-menu > li > a:hover { background-color: #EEE; border: 1px solid #aaa; }
+
+.controls.typefield .group-field input.btn.primary-btn[type="submit"] { font-size: 20px; 
+  margin: 30px auto 20px; padding: 10px 30px; width: auto; }
+.controls.typefield .btn-field { text-align: center; }
+
+/* TYPEFORM MultipleChoice Field */
+.multiple-choice { margin: 0 0 10px; }
+.controls.typefield .multiple-choice .btn .check-mark { display: none; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.controls.typefield .multiple-choice .btn.active .check-mark { display: inline-block; margin: 0 -20px 0 10px; }
+.multiple-choice .btn.btn-primary { background-color: transparent; border-radius: 5px !important;
+  margin: 0 10px 20px 0; font-size: 16px; padding: 6px 32px 6px 12px; position: relative; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+.multiple-choice .btn-primary.active { color: #3572B0; box-shadow: none; color: #FFFFFF; 
+  background-color: #3572B0; }
+.multiple-choice .btn-primary.active:hover { color: #FFF; background-color: #3572b0; }
+.multiple-choice .btn-primary:hover { color: #3572B0; background-color: #eee; }
+
+/* TYPEFORM MultipleCheck Field */
+.controls.typefield .multiple-choice.multiple-check .btn .check-mark { display: inline-block;
+  vertical-align: middle; margin: 2px 0 0 10px; opacity: 0.3; }
+.multiple-choice.multiple-check .btn.btn-primary { padding: 6px 12px; }
+.controls.typefield .multiple-choice.multiple-check .btn.active .check-mark { opacity: 1; }
+
+/* TYPEFORM textarea Field */
+.controls.typefield .field textarea { border: 1px solid transparent; }
+.controls.typefield .field textarea { border-bottom: 1px solid #3572B0; font-size: 18px; font-weight: 400;
+  border-left: 1px dashed rgba(53,114,176,0.5); color: #3572b0; }
+.controls.typefield .field textarea:focus { box-shadow: none; border: 1px dashed rgba(53,114,176,0.5); 
+background-color: transparent; }
+
+/* Privacy-Policy and Terms-of-services */
+.privacy-content li { list-style: outside none disc; }
+
+/* Dashboard Page */
+.operate-plans button { display: block; margin: 0 auto 20px; padding: 10px 20px; width: 100%; border: 0 none;
+  border-radius: 4px; color: #fff; font-size: 18px; -moz-transition: all 0.2s ease-in 0s; }
+.operate-plans .addplan-btn { background-color: #3573b0; }
+.operate-plans .addprticipant-btn { background-color: #158829; margin-bottom: 0px; }
+.controls.combo-control { width: 100%; padding: 0; }
+.controls.combo-control > div, .controls.combo-control > label, .controls.combo-control > a {
+  display: inline-block; vertical-align: top; width: auto; }
+.controls.combo-control label { font-weight: 600; line-height: 50px; max-width: 100px; width: 15%; }
+.controls.combo-control > a { outline: none; }
+.controls.combo-control .edit-plan-btn { font-weight: 500; line-height: 50px; margin: 0 0 0 50px; 
+  color: #2a78e4; }
+.controls.combo-control .select { width: 40%; }
+.controls.combo-control .excel-btn, .controls.combo-control .pdf-btn { line-height: 50px; 
+  margin: 0 0 0 30px; font-size: 25px; font-weight: bold; line-height: 52px;}
+.controls.combo-control .excel-btn { color: #14892C; margin: 0; }
+.controls.combo-control .pdf-btn { color: #CF2A28; }
+
+.dashboard-status-section { border: 2px solid #ccc; border-radius: 7px; padding: 20px; }
+.dashboard-status-section .count { font-size: 52px; font-weight: bold; line-height: 42px; 
+  margin: 0 0 15px; }
+.dashboard-status-section .title { font-size: 18px; font-weight: bold; margin: 0 0 10px; }
+.dashboard-status-section .description { font-size: 16px; }
+.dashboard-status-section .inner-count { font-size: 24px; font-weight: bold; margin: 0 30px 0 0; }
+.dashboard-status-section .increase, .dashboard-status-section .enroll { border: 2px solid #ccc;
+  border-radius: 7px; margin: 15px 0; padding: 15px; width: 180px; }
+.increase span, .enroll span { display: inline-block; vertical-align: top; }
+.increase .text, .enroll .text { line-height: 34px; font-weight: bold; }
+.seperator-line { border-left: 2px solid #ccc; border-right: 2px solid #ccc; }
+.improved-savings { margin: 19% 0 19% 20px; }
+/* Dashboard Page Ends here */
+
+/* Trip Settings */
+.trip-skip { display: none !important; }
+
+/* Team Page Start */
+.add-team-toggle > a { background-color: #3572b0; border-radius: 5px; color: #fff; display: table;
+  margin: 0; padding: 10px; text-decoration: none; outline: none; }
+.add-team-form input[type="submit"] { width: auto; }
+.toggle-fields { display: none; 
+  -moz-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s; }
+
+/* Team Page Ends Here */
+
+/** CSS Hacks for Safari Browser **/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  ::i-block-chrome,.select { background-position: 93% 17px; }
+  ::i-block-chrome,p strong, li strong {font-weight: 500; }
+  ::i-block-chrome,li { list-style: initial; }
+}
+
+/** Media Queries for Responsive **/
+
+/* Retina Screen resolutions from 2560 to 1400 */
+@media screen and (min-width:1400px) {
+  .signup-form, .payment-form-container { max-width: 850px; }
+}
+
+@media screen and (min-width:1680px) {
+  .signup-form, .payment-form-container { max-width: none; }
+}
+
+@media screen and (min-width:1920px) {
+
+}
+
+@media screen and (min-width:2560px) {
+
+}
+/* Retina Screen resolutions from 2560 to 1400 */
+
+@media screen and (max-width:1152px) {
+  .container { max-width: 1024px; }
+}
+
+@media screen and (max-width:1024px) {
+  .container { max-width: 800px; }
+}
+
+@media screen and (max-width:991px) {
+  .left-padding5 { padding-left: 15px; }
+  .right-padding5 { padding-right: 15px; }
+  .calender-div { margin: 50px 0 0; }
+}
+
+@media screen and (max-width:900px) {
+  .logo span:first-child, .logo span:last-child { font-size: 24px; }
+  .header-left { margin: 30px 0; padding: 0 0 0 20px; }
+  .navcontainer .navbar-nav > li > a { padding: 37px 15px; }
+}
+
+@media screen and (max-width:800px) {
+  .container { max-width: 620px; }
+  .form-header .left, .form-header .right { display: block; width: auto; margin: 0; }
+  .form-header .payment-summary .title { margin-bottom: 0; padding: 15px 0 20px; }
+  .billing-address-box, .payment-process-box { float: none; margin: 0; width: 100%; }
+  .left .controls input[type="text"] { width: 64%; }
+}
+
+@media screen and (max-width:767px) {
+  .navbar-default {background-color: transparent;}
+  .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, 
+  .container > .navbar-collapse, .container > .navbar-header { margin-right: 0px; margin-top: 0; }
+  .navbar-default .navbar-toggle .icon-bar { background-color: #FFF;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s; }
+  .navbar-default .navbar-toggle { border-color: #fff; margin: 30px 25px 8px 0;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s; }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: #FFF;}
+  .navbar-default .navbar-toggle:focus .icon-bar,
+  .navbar-default .navbar-toggle:hover .icon-bar { background-color: #3572B0; }
+  .header-left { float: none; margin: 0; padding: 10px 0; }
+  .header-right { float: none; padding: 10px 0 0; }
+  .navbar-default .navbar-toggle { margin: 0; position: absolute; right: 20px; top: -50px; }
+  .navbar-collapse .navbar-nav { margin: 0; }
+  .navcontainer { min-height: 0; }
+  .navcontainer .navbar-nav > li > a { padding: 7px 20px; }
+  .navcontainer .navbar-header { margin: 0; }
+  .navbar-default .navbar-nav > li > a:before { bottom: 0; height: 1px; top: auto; width: 100%; }
+  .operate-plans .addprticipant-btn { margin-bottom: 30px; }
+  .way-to-app .app-logo { text-align: center; margin: 20px 0 0; }
+  .login-form .controls input[type="submit"] { width: 100%; }
+}
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:640px) {
+  .container { max-width: 100%; padding: 0 20px; box-sizing: border-box; }
+  .controls { width: 100%; }
+  .controls:nth-child(2n+1), .controls:nth-child(2n) { padding: 0; }
+}
+
+@media screen and (max-width:480px) {
+  .left .controls input[type="text"] { width: 100%; }
+  .controls .group-field input[type="submit"] { margin: 10px 0 0; width: 100%; }
+  .group-field .control { float: none; width: 100%; }
+  .group-field .control:first-child { margin: 0 0 15px; }
+  .field-container .controls:last-child { margin: 0; }
+  .with-date-control .control.date-control { width: 100%; }
+  .group-field .control:nth-child(2){ top: 0; }
+  .with-date-control .control.date-control .select:nth-child(2) { margin-right: 6%; }
+  .header-left { padding: 10px 0 0 20px; text-align: left; }
+  .logo span:first-child, .logo span:last-child { font-size: 20px; letter-spacing: 0; line-height: 40px; }
+  .get-started > input[type="submit"] { padding: 12px 0; width: 100%; }
+  .mobile-footer { display: block; margin: 4px 0; }
+  .for-mobile { display: none; }
+  .payment-process .next { padding: 0 10px 70px; }
+  .next button { padding: 12px 10px; width: 100%; }
+}
+
+@media screen and (max-width:320px) {
+  /* Here the UI is getting set automatically */
+}
+
