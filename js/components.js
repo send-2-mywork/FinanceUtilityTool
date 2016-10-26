@@ -18,7 +18,8 @@ class PageHeader extends React.Component {
 		return React.createElement(
 			'header',
 			{'className':'header'},
-			React.createElement(HeaderLeft, null)
+			React.createElement(HeaderLeft, null),
+      React.createElement(HeaderRight, null)
 		);
 	}
 }
@@ -34,12 +35,12 @@ class HeaderLeft extends React.Component {
 				React.createElement(
 					'span',
 					null,
-					'ERISA '
+					'Financial '
 				),
 				React.createElement(
 					'span',
 					null,
-					'AdvisorTools'
+					'Utility'
 				)
 			)
 		);
@@ -49,10 +50,33 @@ class HeaderLeft extends React.Component {
 class HeaderRight extends React.Component {
 	render(){
 		return React.createElement(
-			
+			'div',
+      {'className': 'header-right'},
+      React.createElement(
+        'h1',
+        null,
+        'Hello'
+      ),
+      React.createElement(NavBar, null)
 		);
 	}
 }
+
+class NavBar extends React.Component {
+  render(){
+    return React.createElement(
+      'nav',
+      {'className': 'navbar navbar-default navcontainer'},
+      React.createElement(
+        'div',
+        {'className': 'container-fluid'},
+        'Rahul'
+      )
+    );
+  }
+}
+
+
 
 var mountNode = document.getElementById('header');
 //var mountNode = $('#header');

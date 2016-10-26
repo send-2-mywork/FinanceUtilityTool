@@ -1,0 +1,31 @@
+{
+  "name": "financialutilitytool",
+  "version": "1.0.0",
+  "description": "Utility Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/send-2-mywork/FinanceUtilityTool.git"
+  },
+  "author": "Rahul Gajbhiye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/send-2-mywork/FinanceUtilityTool/issues"
+  },
+  "homepage": "https://github.com/send-2-mywork/FinanceUtilityTool#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "elemental": "^0.6.1",
+    "express": "^4.14.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "morgan": "^1.7.0",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-bootstrap": "^0.30.5",
+    "react-dom": "^15.3.2"
+  }
+}
